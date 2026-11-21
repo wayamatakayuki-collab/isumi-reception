@@ -12,7 +12,7 @@
 <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
 <script>
 /* 事務局が最初の1回だけここを設定。PINも各役員の手入力設定も不要。 */
-const GAS_URL='PASTE_YOUR_GOOGLE_APPS_SCRIPT_EXEC_URL_HERE';
+const GAS_URL='https://script.google.com/macros/s/AKfycbw57Ft2_sCg89UC10UAFSgJhZzA_hNR8ztvJ1uFRi8hDDqcJ3EVe9DLyoogTALSEqA/exec';
 const token=(new URLSearchParams(location.hash.slice(1))).get('station')||'';
 let scanner=null,scanning=false,processing=false,lastToken='',lastAt=0,searchResults=[],currentTab='qr',fileScanner=null;
 const el=id=>document.getElementById(id);
